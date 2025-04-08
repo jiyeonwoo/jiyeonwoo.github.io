@@ -3219,3 +3219,48 @@ input, select, textarea {
 			}
 
 	}
+
+
+	.image-container {
+		width: 370px;
+		height: 217px;
+		overflow: hidden;
+		position: relative;
+		border-radius: 6px;
+	  }
+	  
+	  .image-container img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	  }
+	  
+	  .hover-link {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		color: white;
+		text-decoration: none;
+	  }
+	  
+	  .overlay-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: rgba(0, 0, 0, 0.65);
+		padding: 10px 20px;
+		border-radius: 5px;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		font-weight: bold;
+		font-size: 1em;
+	  }
+	  
+	  .hover-link:hover .overlay-text {
+		opacity: 1;
+	  }
+	  
